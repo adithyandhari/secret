@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Will You Be My Valentine?</title>
+    <!-- Beautiful Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating hearts background effect -->
+    <div id="particles"></div>
+    
+    <div class="glass-container" id="main-container">
+        
+        <!-- Question Section -->
+        <div id="question-section">
+            <h1 class="title">Will you be my Valentine? 💖</h1>
+            <div class="gif-container">
+                <!-- Cute asking GIF -->
+                <img src="mochi.gif" alt="Cute Cat Asking" class="cute-gif">
+            </div>
+            
+            <div class="btn-group">
+                <button id="yes-btn" class="btn yes-btn">Yes</button>
+                <button id="no-btn" class="btn no-btn">No</button>
+            </div>
+            
+            <!-- Message container shown within the glass container -->
+            <p id="message-text" class="pleading-text hidden"></p>
+        </div>
+
+        <!-- Success Section (Hidden initially) -->
+        <div id="success-section" class="hidden">
+            <h1 class="title yay-title">Yayy! 🥰✨💖</h1>
+            <div class="gif-container">
+                <!-- Cute hugging GIF -->
+                <img src="yaseen1.gif" alt="Cute Boy and Girl Hugging" class="cute-gif scale-up">
+            </div>
+            <p class="subtitle fade-in">Best decision ever!</p>
+            <p class="love-text pulse">I love you! ❤️</p>
+        </div>
+        
+    </div>
+
+    <!-- Heart particle template for JS -->
+    <template id="heart-template">
+        <div class="heart">❤️</div>
+    </template>
+    
+    <script src="script.js"></script>
+</body>
+</html>
